@@ -1,0 +1,1095 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>热门影视排行榜_最新电影电视剧推荐-好看日韩剧</title>
+    <meta name="description" content="好看日韩剧热门排行榜精选近期热播的日韩电视剧、国产电视剧、国产电影和最新高清电影，提供详情页与在线播放入口。">
+    <meta name="keywords" content="日韩电视剧,日韩电影,国产电视剧,国产电影,免费在线观看,高清视频,影视资源,好看日韩剧,在线播放,最新电影,排行榜,热门影视">
+    <meta name="robots" content="index,follow">
+    <link rel="stylesheet" href="./assets/original.css">
+    <link rel="stylesheet" href="./assets/site.css">
+</head>
+<body class="min-h-screen bg-slate-50">
+<header class="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16">
+            <a href="./index.html" class="site-logo flex items-center space-x-2 group" aria-label="好看日韩剧">
+                <span class="site-logo-mark bg-gradient-to-br from-emerald-600 to-teal-600 p-2 rounded-lg group-hover:scale-110 transition-transform">
+                    <svg class="w-6 h-6 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <rect width="18" height="18" x="3" y="3" rx="2"></rect>
+                        <path d="M7 3v18"></path>
+                        <path d="M3 7.5h4"></path>
+                        <path d="M3 12h18"></path>
+                        <path d="M3 16.5h4"></path>
+                        <path d="M17 3v18"></path>
+                        <path d="M17 7.5h4"></path>
+                        <path d="M17 16.5h4"></path>
+                    </svg>
+                </span>
+                <span class="text-xl font-bold bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent">好看日韩剧</span>
+            </a>
+            <nav class="hidden md:flex items-center space-x-8" aria-label="主导航">
+                <a href="./index.html" class="text-slate-700 hover:text-emerald-600 transition-colors font-medium">首页</a> <a href="./categories.html" class="text-slate-700 hover:text-emerald-600 transition-colors font-medium">分类</a> <a href="./ranking.html" class="text-emerald-600 transition-colors font-medium">排行榜</a> <a href="./category-japanese-korean.html" class="text-slate-700 hover:text-emerald-600 transition-colors font-medium">日韩热播</a> <a href="./category-domestic.html" class="text-slate-700 hover:text-emerald-600 transition-colors font-medium">国产精选</a> <a href="./category-movie.html" class="text-slate-700 hover:text-emerald-600 transition-colors font-medium">高清电影</a>
+                <button type="button" class="search-toggle text-slate-600 hover:text-emerald-600 transition-colors" aria-label="搜索影片">
+                    <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.3-4.3"></path>
+                    </svg>
+                </button>
+            </nav>
+            <button type="button" class="mobile-menu-button md:hidden text-slate-700" aria-label="展开导航" aria-expanded="false">
+                <svg class="menu-open w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <line x1="4" x2="20" y1="12" y2="12"></line>
+                    <line x1="4" x2="20" y1="6" y2="6"></line>
+                    <line x1="4" x2="20" y1="18" y2="18"></line>
+                </svg>
+                <svg class="menu-close hidden w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M18 6 6 18"></path>
+                    <path d="m6 6 12 12"></path>
+                </svg>
+            </button>
+        </div>
+        <nav class="mobile-menu hidden md:hidden pb-4" aria-label="移动导航">
+            <div class="space-y-1">
+                <a href="./index.html" class="block px-4 py-3 rounded-lg hover:bg-emerald-50 text-slate-700 hover:text-emerald-600 transition-colors font-medium">首页</a><a href="./categories.html" class="block px-4 py-3 rounded-lg hover:bg-emerald-50 text-slate-700 hover:text-emerald-600 transition-colors font-medium">分类</a><a href="./ranking.html" class="block px-4 py-3 rounded-lg hover:bg-emerald-50 text-emerald-600 transition-colors font-medium">排行榜</a><a href="./category-japanese-korean.html" class="block px-4 py-3 rounded-lg hover:bg-emerald-50 text-slate-700 hover:text-emerald-600 transition-colors font-medium">日韩热播</a><a href="./category-domestic.html" class="block px-4 py-3 rounded-lg hover:bg-emerald-50 text-slate-700 hover:text-emerald-600 transition-colors font-medium">国产精选</a><a href="./category-movie.html" class="block px-4 py-3 rounded-lg hover:bg-emerald-50 text-slate-700 hover:text-emerald-600 transition-colors font-medium">高清电影</a>
+                <div class="px-4 pt-3">
+                    <input type="search" class="global-search-input w-full bg-slate-100 border border-slate-200 rounded-full px-4 py-2 text-sm outline-none focus:ring-2 focus:ring-emerald-500" placeholder="搜索影片">
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="global-search-panel hidden border-t border-slate-200 bg-white shadow-lg">
+        <div class="max-w-4xl mx-auto px-4 py-4">
+            <input type="search" class="global-search-input w-full bg-slate-100 border border-slate-200 rounded-full px-5 py-3 outline-none focus:ring-2 focus:ring-emerald-500" placeholder="搜索影片、地区、类型或关键词">
+            <div class="search-results mt-4 grid grid-cols-1 sm:grid-cols-2 gap-3"></div>
+        </div>
+    </div>
+</header>
+<main>
+    <section class="bg-gradient-to-r from-emerald-600 to-teal-600 py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h1 class="text-4xl font-bold text-white mb-4">热门影视排行榜</h1>
+            <p class="text-emerald-50 text-lg max-w-3xl">从热播新片、口碑剧集和高关注题材中精选推荐，快速进入影片详情与播放页面。</p>
+        </div>
+    </section>
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="ranking-page-list">
+            <a href="./movie-0393.html" class="ranking-page-item group">
+    <span class="ranking-page-number">01</span>
+    <img src="./93.jpg" alt="冬天的女子" class="ranking-page-cover">
+    <span class="ranking-page-body">
+        <span class="ranking-page-title group-hover:text-emerald-600 transition-colors">冬天的女子</span>
+        <span class="ranking-page-meta">2028 · 中国大陆 · 电影 · 剧情</span>
+        <span class="ranking-page-desc line-clamp-2">冰封的松花江下埋藏着一具无名女尸，而城里三位同名女子都坚称自己才是死者。</span>
+    </span>
+</a><a href="./movie-0768.html" class="ranking-page-item group">
+    <span class="ranking-page-number">02</span>
+    <img src="./18.jpg" alt="新僵尸先生2" class="ranking-page-cover">
+    <span class="ranking-page-body">
+        <span class="ranking-page-title group-hover:text-emerald-600 transition-colors">新僵尸先生2</span>
+        <span class="ranking-page-meta">2028 · 中国香港 · 电影 · 喜剧 / 恐怖</span>
+        <span class="ranking-page-desc line-clamp-2">九叔的徒弟文才和秋生已白发苍苍，为了拯救被僵尸病毒感染的小镇，他们不得不重新开坛作法。</span>
+    </span>
+</a><a href="./movie-0848.html" class="ranking-page-item group">
+    <span class="ranking-page-number">03</span>
+    <img src="./98.jpg" alt="卖艺春秋" class="ranking-page-cover">
+    <span class="ranking-page-body">
+        <span class="ranking-page-title group-hover:text-emerald-600 transition-colors">卖艺春秋</span>
+        <span class="ranking-page-meta">2028 · 中国内地 · 电影 · 剧情 / 历史</span>
+        <span class="ranking-page-desc line-clamp-2">1943年，一个即将解散的评戏班，靠一场“假结婚”骗过了日军，却骗不过台下哭瞎的眼。</span>
+    </span>
+</a><a href="./movie-0879.html" class="ranking-page-item group">
+    <span class="ranking-page-number">04</span>
+    <img src="./129.jpg" alt="东方大港" class="ranking-page-cover">
+    <span class="ranking-page-body">
+        <span class="ranking-page-title group-hover:text-emerald-600 transition-colors">东方大港</span>
+        <span class="ranking-page-meta">2028 · 中国大陆 · 电影 · 剧情， 历史， 家庭</span>
+        <span class="ranking-page-desc line-clamp-2">一个百年码头的拆迁命令，让一个守了一辈子港口的家族三代人，站到了时代洪流的分岔口。</span>
+    </span>
+</a><a href="./movie-0894.html" class="ranking-page-item group">
+    <span class="ranking-page-number">05</span>
+    <img src="./144.jpg" alt="从心认识你" class="ranking-page-cover">
+    <span class="ranking-page-body">
+        <span class="ranking-page-title group-hover:text-emerald-600 transition-colors">从心认识你</span>
+        <span class="ranking-page-meta">2028 · 中国香港 · 电影 · 爱情，科幻，剧情</span>
+        <span class="ranking-page-desc line-clamp-2">相看两厌的结婚十年夫妻，决定删除关于对方的记忆，却在空白状态下，重新爱上了彼此。</span>
+    </span>
+</a><a href="./movie-0961.html" class="ranking-page-item group">
+    <span class="ranking-page-number">06</span>
+    <img src="./61.jpg" alt="畸人艳迹" class="ranking-page-cover">
+    <span class="ranking-page-body">
+        <span class="ranking-page-title group-hover:text-emerald-600 transition-colors">畸人艳迹</span>
+        <span class="ranking-page-meta">2028 · 中国台湾 · 电影 · 剧情, 奇幻</span>
+        <span class="ranking-page-desc line-clamp-2">上世纪六十年代的高雄马戏团里，一位“连体双胞胎”中的妹妹爱上了前来调查“怪胎”的社会局女调查员。</span>
+    </span>
+</a><a href="./movie-1069.html" class="ranking-page-item group">
+    <span class="ranking-page-number">07</span>
+    <img src="./19.jpg" alt="女生要革命" class="ranking-page-cover">
+    <span class="ranking-page-body">
+        <span class="ranking-page-title group-hover:text-emerald-600 transition-colors">女生要革命</span>
+        <span class="ranking-page-meta">2028 · 印度 · 电影 · 剧情 / 励志</span>
+        <span class="ranking-page-desc line-clamp-2">印度偏远小村庄的十位女孩，靠偷学手机编程，推翻了几十年的种姓歧视校规。</span>
+    </span>
+</a><a href="./movie-1130.html" class="ranking-page-item group">
+    <span class="ranking-page-number">08</span>
+    <img src="./80.jpg" alt="东京赛事" class="ranking-page-cover">
+    <span class="ranking-page-body">
+        <span class="ranking-page-title group-hover:text-emerald-600 transition-colors">东京赛事</span>
+        <span class="ranking-page-meta">2028 · 日本 · 电影 · 动作, 犯罪, 运动</span>
+        <span class="ranking-page-desc line-clamp-2">东京地下的非法跑酷赛事“东京赛事”，赢家能实现一个愿望，输家则要支付十年寿命。</span>
+    </span>
+</a><a href="./movie-1141.html" class="ranking-page-item group">
+    <span class="ranking-page-number">09</span>
+    <img src="./91.jpg" alt="星舰战将3" class="ranking-page-cover">
+    <span class="ranking-page-body">
+        <span class="ranking-page-title group-hover:text-emerald-600 transition-colors">星舰战将3</span>
+        <span class="ranking-page-meta">2028 · 美国 · 电影 · 科幻 / 动作 / 战争</span>
+        <span class="ranking-page-desc line-clamp-2">虫族女王入侵地球，退役的老兵们被迫驾驶老旧星舰，执行一场几乎必死的自杀式袭击。</span>
+    </span>
+</a><a href="./movie-1697.html" class="ranking-page-item group">
+    <span class="ranking-page-number">10</span>
+    <img src="./47.jpg" alt="潘多拉的秘密" class="ranking-page-cover">
+    <span class="ranking-page-body">
+        <span class="ranking-page-title group-hover:text-emerald-600 transition-colors">潘多拉的秘密</span>
+        <span class="ranking-page-meta">2028 · 美国 · 剧集 · 科幻 / 惊悚 / 悬疑</span>
+        <span class="ranking-page-desc line-clamp-2">五名克隆人醒来后发现自己是本体富豪的“器官容器”，但一场爆炸给了他们自由，也打开了富豪隐藏千年的秘密。</span>
+    </span>
+</a><a href="./movie-0037.html" class="ranking-page-item group">
+    <span class="ranking-page-number">11</span>
+    <img src="./37.jpg" alt="七七事变" class="ranking-page-cover">
+    <span class="ranking-page-body">
+        <span class="ranking-page-title group-hover:text-emerald-600 transition-colors">七七事变</span>
+        <span class="ranking-page-meta">2027 · 中国大陆 · 电视剧 · 历史, 战争</span>
+        <span class="ranking-page-desc line-clamp-2">从日本间谍、中国守军到北平百姓，全景还原卢沟桥事变前夜的最后48小时。</span>
+    </span>
+</a><a href="./movie-0164.html" class="ranking-page-item group">
+    <span class="ranking-page-number">12</span>
+    <img src="./14.jpg" alt="天空中的金星" class="ranking-page-cover">
+    <span class="ranking-page-body">
+        <span class="ranking-page-title group-hover:text-emerald-600 transition-colors">天空中的金星</span>
+        <span class="ranking-page-meta">2027 · 法国 · 电影 · 奇幻爱情</span>
+        <span class="ranking-page-desc line-clamp-2">塞纳河畔摩天轮的守夜人，每晚都能看到一对情侣在星空下拥抱，直到他发现那是60年前的自己。</span>
+    </span>
+</a><a href="./movie-0220.html" class="ranking-page-item group">
+    <span class="ranking-page-number">13</span>
+    <img src="./70.jpg" alt="小学风云第四季" class="ranking-page-cover">
+    <span class="ranking-page-body">
+        <span class="ranking-page-title group-hover:text-emerald-600 transition-colors">小学风云第四季</span>
+        <span class="ranking-page-meta">2027 · 美国 · 剧集 · 喜剧 / 剧情</span>
+        <span class="ranking-page-desc line-clamp-2">第四季中，备受爱戴的校长退休，新来的企业改革派校长要把这所快乐的小学改造成标准化考试工厂。</span>
+    </span>
+</a><a href="./movie-0268.html" class="ranking-page-item group">
+    <span class="ranking-page-number">14</span>
+    <img src="./118.jpg" alt="伟大的冒险" class="ranking-page-cover">
+    <span class="ranking-page-body">
+        <span class="ranking-page-title group-hover:text-emerald-600 transition-colors">伟大的冒险</span>
+        <span class="ranking-page-meta">2027 · 美国 · 电影 · 动画 / 奇幻 / 冒险</span>
+        <span class="ranking-page-desc line-clamp-2">一只被实验室废弃的克隆猛犸象，跟着一本破日记，去寻找世界上最后一棵会发笑的树。</span>
+    </span>
+</a><a href="./movie-0269.html" class="ranking-page-item group">
+    <span class="ranking-page-number">15</span>
+    <img src="./119.jpg" alt="唐老鸭的自我改善" class="ranking-page-cover">
+    <span class="ranking-page-body">
+        <span class="ranking-page-title group-hover:text-emerald-600 transition-colors">唐老鸭的自我改善</span>
+        <span class="ranking-page-meta">2027 · 美国 · 动画短片 · 喜剧 / 励志</span>
+        <span class="ranking-page-desc line-clamp-2">唐老鸭参加了一门“不发脾气训练课”，结果课程导师是脾气更爆的高飞。</span>
+    </span>
+</a><a href="./movie-0422.html" class="ranking-page-item group">
+    <span class="ranking-page-number">16</span>
+    <img src="./122.jpg" alt="巴比伦亡国记" class="ranking-page-cover">
+    <span class="ranking-page-body">
+        <span class="ranking-page-title group-hover:text-emerald-600 transition-colors">巴比伦亡国记</span>
+        <span class="ranking-page-meta">2027 · 美国 / 英国 · 电影 · 历史 / 战争 / 史诗</span>
+        <span class="ranking-page-desc line-clamp-2">公元前539年，巴比伦城内的祭司与波斯间谍勾结，导致这座伟大城市一夜沦陷。</span>
+    </span>
+</a><a href="./movie-0528.html" class="ranking-page-item group">
+    <span class="ranking-page-number">17</span>
+    <img src="./78.jpg" alt="女教师" class="ranking-page-cover">
+    <span class="ranking-page-body">
+        <span class="ranking-page-title group-hover:text-emerald-600 transition-colors">女教师</span>
+        <span class="ranking-page-meta">2027 · 日本 · 电影 · 剧情，悬疑，校园</span>
+        <span class="ranking-page-desc line-clamp-2">一位备受学生爱戴的女教师被诬陷与男学生有不当关系，她为了自证清白，却发现自己越陷越深。</span>
+    </span>
+</a><a href="./movie-0569.html" class="ranking-page-item group">
+    <span class="ranking-page-number">18</span>
+    <img src="./119.jpg" alt="齐格菲歌舞团" class="ranking-page-cover">
+    <span class="ranking-page-body">
+        <span class="ranking-page-title group-hover:text-emerald-600 transition-colors">齐格菲歌舞团</span>
+        <span class="ranking-page-meta">2027 · 美国 · 剧集 · 剧情, 歌舞, 历史</span>
+        <span class="ranking-page-desc line-clamp-2">1920年代纽约，一家顶级歌舞团的后台，舞者们为了舞台上的光芒，在现实生活中上演着更残酷的生死大戏。</span>
+    </span>
+</a><a href="./movie-0591.html" class="ranking-page-item group">
+    <span class="ranking-page-number">19</span>
+    <img src="./141.jpg" alt="冲击点" class="ranking-page-cover">
+    <span class="ranking-page-body">
+        <span class="ranking-page-title group-hover:text-emerald-600 transition-colors">冲击点</span>
+        <span class="ranking-page-meta">2027 · 美国 · 电影 · 动作 / 惊悚 / 灾难</span>
+        <span class="ranking-page-desc line-clamp-2">一列满载乘客的地铁被安放了磁性炸弹，一旦车速低于80公里，整列车就会爆炸。</span>
+    </span>
+</a><a href="./movie-0611.html" class="ranking-page-item group">
+    <span class="ranking-page-number">20</span>
+    <img src="./11.jpg" alt="莫罗博士的岛" class="ranking-page-cover">
+    <span class="ranking-page-body">
+        <span class="ranking-page-title group-hover:text-emerald-600 transition-colors">莫罗博士的岛</span>
+        <span class="ranking-page-meta">2027 · 英国 · 电影 · 科幻 / 惊悚 / 恐怖</span>
+        <span class="ranking-page-desc line-clamp-2">一个落魄记者流落到孤岛，发现岛上的居民全是半人半兽的“改造体”，而神父般的莫罗博士，正享受着当“上帝”的快感。</span>
+    </span>
+</a><a href="./movie-0628.html" class="ranking-page-item group">
+    <span class="ranking-page-number">21</span>
+    <img src="./28.jpg" alt="超级英雄联盟复仇者第一季" class="ranking-page-cover">
+    <span class="ranking-page-body">
+        <span class="ranking-page-title group-hover:text-emerald-600 transition-colors">超级英雄联盟复仇者第一季</span>
+        <span class="ranking-page-meta">2027 · 美国 · 电视剧 · 动作，科幻，超级英雄</span>
+        <span class="ranking-page-desc line-clamp-2">当神盾局发现九头蛇渗透全球政府，一支前所未有的超能力小队被迫临时集结。</span>
+    </span>
+</a><a href="./movie-0653.html" class="ranking-page-item group">
+    <span class="ranking-page-number">22</span>
+    <img src="./53.jpg" alt="了不起的盖茨比" class="ranking-page-cover">
+    <span class="ranking-page-body">
+        <span class="ranking-page-title group-hover:text-emerald-600 transition-colors">了不起的盖茨比</span>
+        <span class="ranking-page-meta">2027 · 美国 · 电影 · 剧情，爱情</span>
+        <span class="ranking-page-desc line-clamp-2">神秘富翁每夜眺望对岸的绿光，只为唤醒旧情人的一次回眸。</span>
+    </span>
+</a><a href="./movie-1207.html" class="ranking-page-item group">
+    <span class="ranking-page-number">23</span>
+    <img src="./7.jpg" alt="恶魔来到堪萨斯城" class="ranking-page-cover">
+    <span class="ranking-page-body">
+        <span class="ranking-page-title group-hover:text-emerald-600 transition-colors">恶魔来到堪萨斯城</span>
+        <span class="ranking-page-meta">2027 · 美国 · 电影 · 犯罪， 惊悚</span>
+        <span class="ranking-page-desc line-clamp-2">一个神父带着一把猎枪和一本圣经，发誓要在一天内杀光堪萨斯城的所有黑帮头目。</span>
+    </span>
+</a><a href="./movie-1290.html" class="ranking-page-item group">
+    <span class="ranking-page-number">24</span>
+    <img src="./90.jpg" alt="年轻的卡尔·马克思" class="ranking-page-cover">
+    <span class="ranking-page-body">
+        <span class="ranking-page-title group-hover:text-emerald-600 transition-colors">年轻的卡尔·马克思</span>
+        <span class="ranking-page-meta">2027 · 德国 · 电影 · 传记/剧情</span>
+        <span class="ranking-page-desc line-clamp-2">24岁的马克思在波恩大学喝酒打架写檄文，却在一次决斗中意外遇到了改变他一生的挚友恩格斯。</span>
+    </span>
+</a><a href="./movie-1423.html" class="ranking-page-item group">
+    <span class="ranking-page-number">25</span>
+    <img src="./73.jpg" alt="白手掌" class="ranking-page-cover">
+    <span class="ranking-page-body">
+        <span class="ranking-page-title group-hover:text-emerald-600 transition-colors">白手掌</span>
+        <span class="ranking-page-meta">2027 · 中国大陆 · 电影 · 悬疑 / 犯罪</span>
+        <span class="ranking-page-desc line-clamp-2">一具无掌女尸牵出二十年前的灭门案，目击者只剩一双会说话的白手掌。</span>
+    </span>
+</a><a href="./movie-1600.html" class="ranking-page-item group">
+    <span class="ranking-page-number">26</span>
+    <img src="./100.jpg" alt="荒江女侠" class="ranking-page-cover">
+    <span class="ranking-page-body">
+        <span class="ranking-page-title group-hover:text-emerald-600 transition-colors">荒江女侠</span>
+        <span class="ranking-page-meta">2027 · 中国大陆 · 电影 · 武侠、动作</span>
+        <span class="ranking-page-desc line-clamp-2">乱世中，卖鱼女双刀斩恶霸，一夜之间成为长江上的女侠传奇。</span>
+    </span>
+</a><a href="./movie-1677.html" class="ranking-page-item group">
+    <span class="ranking-page-number">27</span>
+    <img src="./27.jpg" alt="八角笼" class="ranking-page-cover">
+    <span class="ranking-page-body">
+        <span class="ranking-page-title group-hover:text-emerald-600 transition-colors">八角笼</span>
+        <span class="ranking-page-meta">2027 · 美国 · 电视剧 · 动作, 体育, 剧情</span>
+        <span class="ranking-page-desc line-clamp-2">前UFC女拳手因过失杀人入狱，却在女子监狱的地下格斗场里，找到了重返赛场的唯一机会和最大的敌人。</span>
+    </span>
+</a><a href="./movie-1771.html" class="ranking-page-item group">
+    <span class="ranking-page-number">28</span>
+    <img src="./121.jpg" alt="极北以北" class="ranking-page-cover">
+    <span class="ranking-page-body">
+        <span class="ranking-page-title group-hover:text-emerald-600 transition-colors">极北以北</span>
+        <span class="ranking-page-meta">2027 · 挪威 / 冰岛 · 电视剧 · 科幻 / 悬疑 / 剧情</span>
+        <span class="ranking-page-desc line-clamp-2">位于北极圈内的一个国际科研站突然与世隔绝，科学家们发现极夜的黑暗里藏着一种能吞噬时间的生物。</span>
+    </span>
+</a><a href="./movie-1971.html" class="ranking-page-item group">
+    <span class="ranking-page-number">29</span>
+    <img src="./21.jpg" alt="怪兽婆婆" class="ranking-page-cover">
+    <span class="ranking-page-body">
+        <span class="ranking-page-title group-hover:text-emerald-600 transition-colors">怪兽婆婆</span>
+        <span class="ranking-page-meta">2027 · 韩国 · 剧集 · 喜剧 / 恐怖 / 家庭</span>
+        <span class="ranking-page-desc line-clamp-2">温柔媳妇嫁入豪门后，发现婆婆每晚十点会准时变成一头绿色怪兽，而丈夫却说“这是家族传统”。</span>
+    </span>
+</a><a href="./movie-0007.html" class="ranking-page-item group">
+    <span class="ranking-page-number">30</span>
+    <img src="./7.jpg" alt="黄石第五季" class="ranking-page-cover">
+    <span class="ranking-page-body">
+        <span class="ranking-page-title group-hover:text-emerald-600 transition-colors">黄石第五季</span>
+        <span class="ranking-page-meta">2026 · 美国 · 剧集 · 剧情，西部，犯罪</span>
+        <span class="ranking-page-desc line-clamp-2">贝丝将企业战火烧到市场股市，凯斯退守牧场，而杰米的野心终于触碰了家族底线。</span>
+    </span>
+</a><a href="./movie-0008.html" class="ranking-page-item group">
+    <span class="ranking-page-number">31</span>
+    <img src="./8.jpg" alt="把命留下" class="ranking-page-cover">
+    <span class="ranking-page-body">
+        <span class="ranking-page-title group-hover:text-emerald-600 transition-colors">把命留下</span>
+        <span class="ranking-page-meta">2026 · 韩国 · 电影 · 恐怖/惊悚</span>
+        <span class="ranking-page-desc line-clamp-2">五个网友收到一封神秘邀请函，参加一场奖金高达十亿韩元的密室逃脱游戏，但很快他们发现，输掉游戏的代价是自己的性命。</span>
+    </span>
+</a><a href="./movie-0016.html" class="ranking-page-item group">
+    <span class="ranking-page-number">32</span>
+    <img src="./16.jpg" alt="居里夫人" class="ranking-page-cover">
+    <span class="ranking-page-body">
+        <span class="ranking-page-title group-hover:text-emerald-600 transition-colors">居里夫人</span>
+        <span class="ranking-page-meta">2026 · 法国 · 电影 · 剧情</span>
+        <span class="ranking-page-desc line-clamp-2">她发现了镭，却差点弄丢了爱情与名誉。</span>
+    </span>
+</a><a href="./movie-0025.html" class="ranking-page-item group">
+    <span class="ranking-page-number">33</span>
+    <img src="./25.jpg" alt="亚特兰大第四季" class="ranking-page-cover">
+    <span class="ranking-page-body">
+        <span class="ranking-page-title group-hover:text-emerald-600 transition-colors">亚特兰大第四季</span>
+        <span class="ranking-page-meta">2026 · 美国 · 电视剧 · 剧情, 喜剧, 悬疑</span>
+        <span class="ranking-page-desc line-clamp-2">时隔三年，亚特兰大的说唱歌手、经理和他们的奇怪朋友们，在第四季中回到了原点，但原点已经不存在了。</span>
+    </span>
+</a><a href="./movie-0032.html" class="ranking-page-item group">
+    <span class="ranking-page-number">34</span>
+    <img src="./32.jpg" alt="女猎手" class="ranking-page-cover">
+    <span class="ranking-page-body">
+        <span class="ranking-page-title group-hover:text-emerald-600 transition-colors">女猎手</span>
+        <span class="ranking-page-meta">2026 · 韩国 · 电影 · 动作 / 悬疑</span>
+        <span class="ranking-page-desc line-clamp-2">在禁枪的未来韩国，一名聋哑清洁女工其实是地下世界闻风丧胆的弓箭杀手“女猎手”。</span>
+    </span>
+</a><a href="./movie-0047.html" class="ranking-page-item group">
+    <span class="ranking-page-number">35</span>
+    <img src="./47.jpg" alt="南营洞1985" class="ranking-page-cover">
+    <span class="ranking-page-body">
+        <span class="ranking-page-title group-hover:text-emerald-600 transition-colors">南营洞1985</span>
+        <span class="ranking-page-meta">2026 · 韩国 · 电影 · 剧情 / 历史 / 悬疑</span>
+        <span class="ranking-page-desc line-clamp-2">1985年，一个平民被误认为是运动领袖，关入南营洞的恐怖密室，审讯者却逐渐精神崩溃。</span>
+    </span>
+</a><a href="./movie-0048.html" class="ranking-page-item group">
+    <span class="ranking-page-number">36</span>
+    <img src="./48.jpg" alt="再见长夜" class="ranking-page-cover">
+    <span class="ranking-page-body">
+        <span class="ranking-page-title group-hover:text-emerald-600 transition-colors">再见长夜</span>
+        <span class="ranking-page-meta">2026 · 中国大陆 · 电影 · 悬疑, 犯罪</span>
+        <span class="ranking-page-desc line-clamp-2">1999年东北小城，漫长的冬夜连着发生命案，而所有线索都指向二十年前那个没能走出集体宿舍的女工。</span>
+    </span>
+</a><a href="./movie-0079.html" class="ranking-page-item group">
+    <span class="ranking-page-number">37</span>
+    <img src="./79.jpg" alt="三百英里天堂" class="ranking-page-cover">
+    <span class="ranking-page-body">
+        <span class="ranking-page-title group-hover:text-emerald-600 transition-colors">三百英里天堂</span>
+        <span class="ranking-page-meta">2026 · 英国 / 美国 · 电影 · 爱情, 剧情</span>
+        <span class="ranking-page-desc line-clamp-2">一名被诊断为渐冻症的钢琴家租了一辆房车，要和暗恋十五年的闺蜜在三百英里的旅途中度过“最后的蜜月”。</span>
+    </span>
+</a><a href="./movie-0083.html" class="ranking-page-item group">
+    <span class="ranking-page-number">38</span>
+    <img src="./83.jpg" alt="道口时间" class="ranking-page-cover">
+    <span class="ranking-page-body">
+        <span class="ranking-page-title group-hover:text-emerald-600 transition-colors">道口时间</span>
+        <span class="ranking-page-meta">2026 · 日本 · 电影 · 剧情，奇幻</span>
+        <span class="ranking-page-desc line-clamp-2">位于闹市区的神秘道口，每次栏杆放下再升起后，穿行者的身份都会随机互换。</span>
+    </span>
+</a><a href="./movie-0087.html" class="ranking-page-item group">
+    <span class="ranking-page-number">39</span>
+    <img src="./87.jpg" alt="燕山日记" class="ranking-page-cover">
+    <span class="ranking-page-body">
+        <span class="ranking-page-title group-hover:text-emerald-600 transition-colors">燕山日记</span>
+        <span class="ranking-page-meta">2026 · 中国大陆 · 电影 · 历史悬疑</span>
+        <span class="ranking-page-desc line-clamp-2">一本出土于燕山辽墓的空白日记，每隔十年，上面就会自动浮现出不同的文字。</span>
+    </span>
+</a><a href="./movie-0095.html" class="ranking-page-item group">
+    <span class="ranking-page-number">40</span>
+    <img src="./95.jpg" alt="逃学威龙" class="ranking-page-cover">
+    <span class="ranking-page-body">
+        <span class="ranking-page-title group-hover:text-emerald-600 transition-colors">逃学威龙</span>
+        <span class="ranking-page-meta">2026 · 中国香港 · 电影 · 喜剧动作</span>
+        <span class="ranking-page-desc line-clamp-2">当年那个逃学威龙已经当了校长，他叛逆的女儿成了新卧底，目标正是老爸的学校。</span>
+    </span>
+</a><a href="./movie-0111.html" class="ranking-page-item group">
+    <span class="ranking-page-number">41</span>
+    <img src="./111.jpg" alt="地狱疆场" class="ranking-page-cover">
+    <span class="ranking-page-body">
+        <span class="ranking-page-title group-hover:text-emerald-600 transition-colors">地狱疆场</span>
+        <span class="ranking-page-meta">2026 · 中国大陆 · 电影 · 战争，奇幻</span>
+        <span class="ranking-page-desc line-clamp-2">抗战末期，一支中国侦察排误入地狱副本，必须在鬼怪的围猎下完成不可能的任务。</span>
+    </span>
+</a><a href="./movie-0143.html" class="ranking-page-item group">
+    <span class="ranking-page-number">42</span>
+    <img src="./143.jpg" alt="致命点击" class="ranking-page-cover">
+    <span class="ranking-page-body">
+        <span class="ranking-page-title group-hover:text-emerald-600 transition-colors">致命点击</span>
+        <span class="ranking-page-meta">2026 · 美国 / 德国 · 剧集 · 悬疑、犯罪、科技惊悚</span>
+        <span class="ranking-page-desc line-clamp-2">一个拥有千万粉丝的生活方式博主被绑架，绑匪提出的要求不是赎金，而是“让她的点赞数清零”。</span>
+    </span>
+</a><a href="./movie-0148.html" class="ranking-page-item group">
+    <span class="ranking-page-number">43</span>
+    <img src="./148.jpg" alt="戈德曼的审判" class="ranking-page-cover">
+    <span class="ranking-page-body">
+        <span class="ranking-page-title group-hover:text-emerald-600 transition-colors">戈德曼的审判</span>
+        <span class="ranking-page-meta">2026 · 美国 · 剧集 · 律政, 悬疑</span>
+        <span class="ranking-page-desc line-clamp-2">一名黑人律师为自己辩护谋杀罪，整个美国通过直播围观这场世纪审判。</span>
+    </span>
+</a><a href="./movie-0152.html" class="ranking-page-item group">
+    <span class="ranking-page-number">44</span>
+    <img src="./2.jpg" alt="民主青年进行曲" class="ranking-page-cover">
+    <span class="ranking-page-body">
+        <span class="ranking-page-title group-hover:text-emerald-600 transition-colors">民主青年进行曲</span>
+        <span class="ranking-page-meta">2026 · 中国大陆 · 电影 · 历史 / 青春</span>
+        <span class="ranking-page-desc line-clamp-2">1940年代，五个不同出身的青年在西南联大相遇，他们的友谊在时代洪流中被反复撕扯。</span>
+    </span>
+</a><a href="./movie-0156.html" class="ranking-page-item group">
+    <span class="ranking-page-number">45</span>
+    <img src="./6.jpg" alt="地雷战" class="ranking-page-cover">
+    <span class="ranking-page-body">
+        <span class="ranking-page-title group-hover:text-emerald-600 transition-colors">地雷战</span>
+        <span class="ranking-page-meta">2026 · 中国大陆 · 电影 · 战争、动作、历史</span>
+        <span class="ranking-page-desc line-clamp-2">不魔改，不神剧，用最硬核的物理知识和最惨烈的战场还原，重述那场让日军闻风丧胆的“天雷”之战。</span>
+    </span>
+</a><a href="./movie-0163.html" class="ranking-page-item group">
+    <span class="ranking-page-number">46</span>
+    <img src="./13.jpg" alt="末日村庄" class="ranking-page-cover">
+    <span class="ranking-page-body">
+        <span class="ranking-page-title group-hover:text-emerald-600 transition-colors">末日村庄</span>
+        <span class="ranking-page-meta">2026 · 韩国 · 电影 · 恐怖 / 惊悚 / 灾难</span>
+        <span class="ranking-page-desc line-clamp-2">警察为追查失踪案闯入一个与世隔绝的村庄，发现村民靠种植“人类庄稼”来供奉地底怪物。</span>
+    </span>
+</a><a href="./movie-0167.html" class="ranking-page-item group">
+    <span class="ranking-page-number">47</span>
+    <img src="./17.jpg" alt="睡花" class="ranking-page-cover">
+    <span class="ranking-page-body">
+        <span class="ranking-page-title group-hover:text-emerald-600 transition-colors">睡花</span>
+        <span class="ranking-page-meta">2026 · 日本, 中国台湾 · 电影 · 动画, 奇幻</span>
+        <span class="ranking-page-desc line-clamp-2">失眠症少女每晚都会进入一个濒死植物的梦境，她必须在梦里种花，才能拯救现实中的森林。</span>
+    </span>
+</a><a href="./movie-0168.html" class="ranking-page-item group">
+    <span class="ranking-page-number">48</span>
+    <img src="./18.jpg" alt="红楼春怨" class="ranking-page-cover">
+    <span class="ranking-page-body">
+        <span class="ranking-page-title group-hover:text-emerald-600 transition-colors">红楼春怨</span>
+        <span class="ranking-page-meta">2026 · 中国大陆 · 电影 · 剧情 / 历史 / 悬疑</span>
+        <span class="ranking-page-desc line-clamp-2">从林黛玉进贾府那天起，她就开始用一个金丝楠木匣记录所有人的秘密。</span>
+    </span>
+</a><a href="./movie-0169.html" class="ranking-page-item group">
+    <span class="ranking-page-number">49</span>
+    <img src="./19.jpg" alt="内陆惊魂" class="ranking-page-cover">
+    <span class="ranking-page-body">
+        <span class="ranking-page-title group-hover:text-emerald-600 transition-colors">内陆惊魂</span>
+        <span class="ranking-page-meta">2026 · 澳大利亚 · 电影 · 惊悚 / 悬疑</span>
+        <span class="ranking-page-desc line-clamp-2">一家四口穿越澳洲内陆，车子抛锚后，发现周围方圆百里唯一能帮他们的“好心人”，是个专杀游客的家族。</span>
+    </span>
+</a><a href="./movie-0183.html" class="ranking-page-item group">
+    <span class="ranking-page-number">50</span>
+    <img src="./33.jpg" alt="鳏夫跨美旅" class="ranking-page-cover">
+    <span class="ranking-page-body">
+        <span class="ranking-page-title group-hover:text-emerald-600 transition-colors">鳏夫跨美旅</span>
+        <span class="ranking-page-meta">2026 · 美国 · 电影 · 剧情 / 公路</span>
+        <span class="ranking-page-desc line-clamp-2">70岁的鳏夫骑着亡妻的哈雷摩托穿越美国，只为把她的一部分骨灰撒在他们相遇的66号公路每个角落。</span>
+    </span>
+</a><a href="./movie-0185.html" class="ranking-page-item group">
+    <span class="ranking-page-number">51</span>
+    <img src="./35.jpg" alt="鲨鱼侵袭" class="ranking-page-cover">
+    <span class="ranking-page-body">
+        <span class="ranking-page-title group-hover:text-emerald-600 transition-colors">鲨鱼侵袭</span>
+        <span class="ranking-page-meta">2026 · 美国 · 电影 · 灾难惊悚</span>
+        <span class="ranking-page-desc line-clamp-2">一艘豪华邮轮沉没，数百幸存者趴在残骸上等待救援，而他们脚下的深海，几千条鲨鱼正在巡游。</span>
+    </span>
+</a><a href="./movie-0199.html" class="ranking-page-item group">
+    <span class="ranking-page-number">52</span>
+    <img src="./49.jpg" alt="古墓夺宝" class="ranking-page-cover">
+    <span class="ranking-page-body">
+        <span class="ranking-page-title group-hover:text-emerald-600 transition-colors">古墓夺宝</span>
+        <span class="ranking-page-meta">2026 · 中国 · 电影 · 冒险 / 动作</span>
+        <span class="ranking-page-desc line-clamp-2">两代盗墓世家联手破解西夏古墓机关，却发现墓中最大宝藏是一个活着的守墓人。</span>
+    </span>
+</a><a href="./movie-0230.html" class="ranking-page-item group">
+    <span class="ranking-page-number">53</span>
+    <img src="./80.jpg" alt="玩命追逐" class="ranking-page-cover">
+    <span class="ranking-page-body">
+        <span class="ranking-page-title group-hover:text-emerald-600 transition-colors">玩命追逐</span>
+        <span class="ranking-page-meta">2026 · 中国大陆 · 电影 · 动作 / 赛车 / 犯罪</span>
+        <span class="ranking-page-desc line-clamp-2">为了还清巨债，顶级车手被迫为黑帮运送神秘货物，却发现自己车上绑着即将生产的仇人之女。</span>
+    </span>
+</a><a href="./movie-0232.html" class="ranking-page-item group">
+    <span class="ranking-page-number">54</span>
+    <img src="./82.jpg" alt="勇敢的世界 勇无止境版" class="ranking-page-cover">
+    <span class="ranking-page-body">
+        <span class="ranking-page-title group-hover:text-emerald-600 transition-colors">勇敢的世界 勇无止境版</span>
+        <span class="ranking-page-meta">2026 · 中国大陆 · 综艺 · 真人秀 / 冒险 / 竞技</span>
+        <span class="ranking-page-desc line-clamp-2">从全国海选出的十二位素人“勇士”，在没有奖金、没有救援、只有一部卫星电话的情况下，挑战人类生理和心理的极限。</span>
+    </span>
+</a><a href="./movie-0240.html" class="ranking-page-item group">
+    <span class="ranking-page-number">55</span>
+    <img src="./90.jpg" alt="夜困摩天岭1941" class="ranking-page-cover">
+    <span class="ranking-page-body">
+        <span class="ranking-page-title group-hover:text-emerald-600 transition-colors">夜困摩天岭1941</span>
+        <span class="ranking-page-meta">2026 · 美国 · 电影 · 黑色电影 / 悬疑 / 犯罪</span>
+        <span class="ranking-page-desc line-clamp-2">1941年雨夜，摩天岭酒店电梯困住五个人，其中一个是刚抢劫赌场的亡命徒。</span>
+    </span>
+</a><a href="./movie-0250.html" class="ranking-page-item group">
+    <span class="ranking-page-number">56</span>
+    <img src="./100.jpg" alt="绝对统治" class="ranking-page-cover">
+    <span class="ranking-page-body">
+        <span class="ranking-page-title group-hover:text-emerald-600 transition-colors">绝对统治</span>
+        <span class="ranking-page-meta">2026 · 德国 · 剧集 · 科幻, 惊悚</span>
+        <span class="ranking-page-desc line-clamp-2">在一个用“幸福指数”衡量公民价值的未来德国，一个底层清洁工发现，只要反抗，就会被系统“删除”出所有人的记忆。</span>
+    </span>
+</a><a href="./movie-0257.html" class="ranking-page-item group">
+    <span class="ranking-page-number">57</span>
+    <img src="./107.jpg" alt="刘在街头第四季" class="ranking-page-cover">
+    <span class="ranking-page-body">
+        <span class="ranking-page-title group-hover:text-emerald-600 transition-colors">刘在街头第四季</span>
+        <span class="ranking-page-meta">2026 · 中国大陆 · 剧集 · 纪录片，社会</span>
+        <span class="ranking-page-desc line-clamp-2">镜头对准街头，记录十位普通人在一年时间里的命运流转与城市变迁。</span>
+    </span>
+</a><a href="./movie-0267.html" class="ranking-page-item group">
+    <span class="ranking-page-number">58</span>
+    <img src="./117.jpg" alt="斗魔王杰克" class="ranking-page-cover">
+    <span class="ranking-page-body">
+        <span class="ranking-page-title group-hover:text-emerald-600 transition-colors">斗魔王杰克</span>
+        <span class="ranking-page-meta">2026 · 日本 · 动画剧集 · 动作 / 奇幻 / 热血</span>
+        <span class="ranking-page-desc line-clamp-2">死后堕入地狱的少年，必须在“斗魔场”连胜一千场，才能换得一次重返人间的机会。</span>
+    </span>
+</a><a href="./movie-0284.html" class="ranking-page-item group">
+    <span class="ranking-page-number">59</span>
+    <img src="./134.jpg" alt="冲锋9号续集" class="ranking-page-cover">
+    <span class="ranking-page-body">
+        <span class="ranking-page-title group-hover:text-emerald-600 transition-colors">冲锋9号续集</span>
+        <span class="ranking-page-meta">2026 · 香港 · 电影 · 警匪 / 动作 / 犯罪</span>
+        <span class="ranking-page-desc line-clamp-2">前作牺牲的飞虎队狙击手竟在敌方阵营出现，是死而复生还是双重卧底？</span>
+    </span>
+</a><a href="./movie-0295.html" class="ranking-page-item group">
+    <span class="ranking-page-number">60</span>
+    <img src="./145.jpg" alt="亡命五杰" class="ranking-page-cover">
+    <span class="ranking-page-body">
+        <span class="ranking-page-title group-hover:text-emerald-600 transition-colors">亡命五杰</span>
+        <span class="ranking-page-meta">2026 · 墨西哥 · 电影 · 动作、西部、冒险</span>
+        <span class="ranking-page-desc line-clamp-2">五位各怀绝技的死刑犯被富豪从绞刑架上买下，去执行不可能的任务，却发现富豪就是他们五年前血案的真正元凶。</span>
+    </span>
+</a><a href="./movie-0325.html" class="ranking-page-item group">
+    <span class="ranking-page-number">61</span>
+    <img src="./25.jpg" alt="一切徒手2" class="ranking-page-cover">
+    <span class="ranking-page-body">
+        <span class="ranking-page-title group-hover:text-emerald-600 transition-colors">一切徒手2</span>
+        <span class="ranking-page-meta">2026 · 美国 · 电影 · 动作/惊悚</span>
+        <span class="ranking-page-desc line-clamp-2">徒手格斗大师被陷害入狱，出狱后发现女儿被绑架，他只有24小时，且全程不能使用任何武器。 上一集的格斗大师隐姓埋名，却因救了一个陌生人而暴露身份，被迫对上一个拥有私人军队的军火商。</span>
+    </span>
+</a><a href="./movie-0327.html" class="ranking-page-item group">
+    <span class="ranking-page-number">62</span>
+    <img src="./27.jpg" alt="当爱未成往事" class="ranking-page-cover">
+    <span class="ranking-page-body">
+        <span class="ranking-page-title group-hover:text-emerald-600 transition-colors">当爱未成往事</span>
+        <span class="ranking-page-meta">2026 · 中国大陆 · 电影 · 爱情，剧情，家庭</span>
+        <span class="ranking-page-desc line-clamp-2">丈夫患阿尔茨海默病忘记了一切，却每天重新爱上同病房的她——他的前妻。</span>
+    </span>
+</a><a href="./movie-0329.html" class="ranking-page-item group">
+    <span class="ranking-page-number">63</span>
+    <img src="./29.jpg" alt="极限炫风" class="ranking-page-cover">
+    <span class="ranking-page-body">
+        <span class="ranking-page-title group-hover:text-emerald-600 transition-colors">极限炫风</span>
+        <span class="ranking-page-meta">2026 · 中国大陆 · 电影 · 动作、运动、冒险</span>
+        <span class="ranking-page-desc line-clamp-2">为了寻找失踪的哥哥，跑酷少年闯入了跨国犯罪组织的高科技大厦。</span>
+    </span>
+</a><a href="./movie-0331.html" class="ranking-page-item group">
+    <span class="ranking-page-number">64</span>
+    <img src="./31.jpg" alt="示意停车" class="ranking-page-cover">
+    <span class="ranking-page-body">
+        <span class="ranking-page-title group-hover:text-emerald-600 transition-colors">示意停车</span>
+        <span class="ranking-page-meta">2026 · 法国 / 比利时 · 电影 · 剧情 / 惊悚</span>
+        <span class="ranking-page-desc line-clamp-2">单亲爸爸为给女儿凑手术费，成为一名“示意停车”劫匪，却抢到了自己老板的贪污账本。</span>
+    </span>
+</a><a href="./movie-0338.html" class="ranking-page-item group">
+    <span class="ranking-page-number">65</span>
+    <img src="./38.jpg" alt="星际幻爱" class="ranking-page-cover">
+    <span class="ranking-page-body">
+        <span class="ranking-page-title group-hover:text-emerald-600 transition-colors">星际幻爱</span>
+        <span class="ranking-page-meta">2026 · 英国 · 电影 · 科幻, 爱情, 剧情</span>
+        <span class="ranking-page-desc line-clamp-2">她爱上了太空站里的AI，直到某天AI告诉她：其实你才是被模拟出来的那一个。</span>
+    </span>
+</a><a href="./movie-0343.html" class="ranking-page-item group">
+    <span class="ranking-page-number">66</span>
+    <img src="./43.jpg" alt="不死咒怨3" class="ranking-page-cover">
+    <span class="ranking-page-body">
+        <span class="ranking-page-title group-hover:text-emerald-600 transition-colors">不死咒怨3</span>
+        <span class="ranking-page-meta">2026 · 日本 · 电影 · 恐怖</span>
+        <span class="ranking-page-desc line-clamp-2">伽椰子被杀的那一夜，其实有第三个人在现场，而他的怨念比房子更古老。</span>
+    </span>
+</a><a href="./movie-0352.html" class="ranking-page-item group">
+    <span class="ranking-page-number">67</span>
+    <img src="./52.jpg" alt="波士顿马拉松爆炸案调查" class="ranking-page-cover">
+    <span class="ranking-page-body">
+        <span class="ranking-page-title group-hover:text-emerald-600 transition-colors">波士顿马拉松爆炸案调查</span>
+        <span class="ranking-page-meta">2026 · 美国 · 电影 · 惊悚/犯罪</span>
+        <span class="ranking-page-desc line-clamp-2">爆炸案发生后84小时，FBI探员与当地警察在数千条错误线索中，锁定一个藏在郊区船里的兄弟。</span>
+    </span>
+</a><a href="./movie-0371.html" class="ranking-page-item group">
+    <span class="ranking-page-number">68</span>
+    <img src="./71.jpg" alt="刺杀肯尼迪" class="ranking-page-cover">
+    <span class="ranking-page-body">
+        <span class="ranking-page-title group-hover:text-emerald-600 transition-colors">刺杀肯尼迪</span>
+        <span class="ranking-page-meta">2026 · 美国 · 电影 · 历史 / 悬疑 / 政治</span>
+        <span class="ranking-page-desc line-clamp-2">一份被隐藏60年的FBI绝密档案曝光，凶手另有其人，还是个女人。</span>
+    </span>
+</a><a href="./movie-0395.html" class="ranking-page-item group">
+    <span class="ranking-page-number">69</span>
+    <img src="./95.jpg" alt="太空群落" class="ranking-page-cover">
+    <span class="ranking-page-body">
+        <span class="ranking-page-title group-hover:text-emerald-600 transition-colors">太空群落</span>
+        <span class="ranking-page-meta">2026 · 美国 · 剧集 · 科幻，恐怖</span>
+        <span class="ranking-page-desc line-clamp-2">国际空间站接到一段来自深空的“歌声”，三天后，宇航员开始用身体“浇花”。</span>
+    </span>
+</a><a href="./movie-0399.html" class="ranking-page-item group">
+    <span class="ranking-page-number">70</span>
+    <img src="./99.jpg" alt="感动裁判的玉儿" class="ranking-page-cover">
+    <span class="ranking-page-body">
+        <span class="ranking-page-title group-hover:text-emerald-600 transition-colors">感动裁判的玉儿</span>
+        <span class="ranking-page-meta">2026 · 中国大陆 · 电影 · 运动 / 剧情</span>
+        <span class="ranking-page-desc line-clamp-2">农村女孩玉儿参加省摔跤比赛，所有裁判都判她输，但她在赛后做了一件事，让全场裁判集体改判。</span>
+    </span>
+</a><a href="./movie-0407.html" class="ranking-page-item group">
+    <span class="ranking-page-number">71</span>
+    <img src="./107.jpg" alt="摩西与阿隆" class="ranking-page-cover">
+    <span class="ranking-page-body">
+        <span class="ranking-page-title group-hover:text-emerald-600 transition-colors">摩西与阿隆</span>
+        <span class="ranking-page-meta">2026 · 德国 / 法国 · 电影 · 剧情, 历史, 音乐, 传记</span>
+        <span class="ranking-page-desc line-clamp-2">二战前夕，一位犹太拉比之子和他的党卫军亲哥哥，用一部未完成的歌剧展开了关于救赎的殊死辩论。</span>
+    </span>
+</a><a href="./movie-0408.html" class="ranking-page-item group">
+    <span class="ranking-page-number">72</span>
+    <img src="./108.jpg" alt="八级大地震：命悬一劫" class="ranking-page-cover">
+    <span class="ranking-page-body">
+        <span class="ranking-page-title group-hover:text-emerald-600 transition-colors">八级大地震：命悬一劫</span>
+        <span class="ranking-page-meta">2026 · 美国 · 电影 · 灾难 / 动作</span>
+        <span class="ranking-page-desc line-clamp-2">一场八级大地震撕裂了整座城市，一个建筑工程师必须在余震中穿越炼狱，救出怀二胎的妻子。</span>
+    </span>
+</a><a href="./movie-0409.html" class="ranking-page-item group">
+    <span class="ranking-page-number">73</span>
+    <img src="./109.jpg" alt="剪裁魔法师2" class="ranking-page-cover">
+    <span class="ranking-page-body">
+        <span class="ranking-page-title group-hover:text-emerald-600 transition-colors">剪裁魔法师2</span>
+        <span class="ranking-page-meta">2026 · 英国 · 电视剧 · 剧情，传记，时尚</span>
+        <span class="ranking-page-desc line-clamp-2">老裁缝收到一件来自唐宁街的“不可能任务”：为一位深陷丑闻的女首相裁剪一件能让她在质询会上“不战而胜”的战袍。</span>
+    </span>
+</a><a href="./movie-0439.html" class="ranking-page-item group">
+    <span class="ranking-page-number">74</span>
+    <img src="./139.jpg" alt="黑蝎女侠2：震荡之后" class="ranking-page-cover">
+    <span class="ranking-page-body">
+        <span class="ranking-page-title group-hover:text-emerald-600 transition-colors">黑蝎女侠2：震荡之后</span>
+        <span class="ranking-page-meta">2026 · 美国 · 电影 · 动作, 科幻, 惊悚</span>
+        <span class="ranking-page-desc line-clamp-2">上一部大战的余波引发了全球地震，黑蝎女侠必须阻止一个军阀抢夺“地核稳定器”。</span>
+    </span>
+</a><a href="./movie-0444.html" class="ranking-page-item group">
+    <span class="ranking-page-number">75</span>
+    <img src="./144.jpg" alt="罗马机场" class="ranking-page-cover">
+    <span class="ranking-page-body">
+        <span class="ranking-page-title group-hover:text-emerald-600 transition-colors">罗马机场</span>
+        <span class="ranking-page-meta">2026 · 意大利 / 美国 · 电影 · 剧情 / 惊悚</span>
+        <span class="ranking-page-desc line-clamp-2">罗马机场的深夜，一名清洁工偶然捡到藏有绝密芯片的行李箱，瞬间成为各方势力猎杀的目标。</span>
+    </span>
+</a><a href="./movie-0450.html" class="ranking-page-item group">
+    <span class="ranking-page-number">76</span>
+    <img src="./150.jpg" alt="拦截终结者" class="ranking-page-cover">
+    <span class="ranking-page-body">
+        <span class="ranking-page-title group-hover:text-emerald-600 transition-colors">拦截终结者</span>
+        <span class="ranking-page-meta">2026 · 美国 · 电影 · 科幻</span>
+        <span class="ranking-page-desc line-clamp-2">2046年，最后一个没植入芯片的人类司机，成了抵抗AI控制全球交通系统的唯一希望。</span>
+    </span>
+</a><a href="./movie-0467.html" class="ranking-page-item group">
+    <span class="ranking-page-number">77</span>
+    <img src="./17.jpg" alt="善意杀戮" class="ranking-page-cover">
+    <span class="ranking-page-body">
+        <span class="ranking-page-title group-hover:text-emerald-600 transition-colors">善意杀戮</span>
+        <span class="ranking-page-meta">2026 · 美国 · 电影 · 惊悚 / 犯罪 / 剧情</span>
+        <span class="ranking-page-desc line-clamp-2">一名护士坚信自己在替天行道，为绝症患者实施“善意杀戮”，直到有一天，她发现自己杀的其实都是正常人。</span>
+    </span>
+</a><a href="./movie-0470.html" class="ranking-page-item group">
+    <span class="ranking-page-number">78</span>
+    <img src="./20.jpg" alt="青春欲火" class="ranking-page-cover">
+    <span class="ranking-page-body">
+        <span class="ranking-page-title group-hover:text-emerald-600 transition-colors">青春欲火</span>
+        <span class="ranking-page-meta">2026 · 中国香港 · 电影 · 剧情 / 灾难 / 青春</span>
+        <span class="ranking-page-desc line-clamp-2">一个只想当网红的废柴青年，在一次火灾中被困，竟是被他瞧不起的消防员父亲用命换来的。</span>
+    </span>
+</a><a href="./movie-0487.html" class="ranking-page-item group">
+    <span class="ranking-page-number">79</span>
+    <img src="./37.jpg" alt="双面生活" class="ranking-page-cover">
+    <span class="ranking-page-body">
+        <span class="ranking-page-title group-hover:text-emerald-600 transition-colors">双面生活</span>
+        <span class="ranking-page-meta">2026 · 法国 · 剧集 · 剧情 / 悬疑 / 心理</span>
+        <span class="ranking-page-desc line-clamp-2">巴黎一名受人尊敬的法官白天审案，晚上却以另一重身份混迹地下拳场，直到他审理的一起谋杀案的死者，正是昨晚的对手。</span>
+    </span>
+</a><a href="./movie-0492.html" class="ranking-page-item group">
+    <span class="ranking-page-number">80</span>
+    <img src="./42.jpg" alt="萌宠入殓师" class="ranking-page-cover">
+    <span class="ranking-page-body">
+        <span class="ranking-page-title group-hover:text-emerald-600 transition-colors">萌宠入殓师</span>
+        <span class="ranking-page-meta">2026 · 日本 · 电视剧 / 深夜剧 · 剧情 / 治愈 / 职业</span>
+        <span class="ranking-page-desc line-clamp-2">前黑道成员在宠物火葬场打工，负责给每一只死去的动物“梳最后一次毛”。</span>
+    </span>
+</a><a href="./movie-0498.html" class="ranking-page-item group">
+    <span class="ranking-page-number">81</span>
+    <img src="./48.jpg" alt="放风通行证" class="ranking-page-cover">
+    <span class="ranking-page-body">
+        <span class="ranking-page-title group-hover:text-emerald-600 transition-colors">放风通行证</span>
+        <span class="ranking-page-meta">2026 · 美国 · 电视剧 · 喜剧， 剧情， 监狱</span>
+        <span class="ranking-page-desc line-clamp-2">一名模范囚犯获得一周“放风通行证”回家探亲，却发现家人雇了演员来骗他。</span>
+    </span>
+</a><a href="./movie-0499.html" class="ranking-page-item group">
+    <span class="ranking-page-number">82</span>
+    <img src="./49.jpg" alt="反派初始化" class="ranking-page-cover">
+    <span class="ranking-page-body">
+        <span class="ranking-page-title group-hover:text-emerald-600 transition-colors">反派初始化</span>
+        <span class="ranking-page-meta">2026 · 中国大陆 · 剧集 · 悬疑, 奇幻, 犯罪</span>
+        <span class="ranking-page-desc line-clamp-2">顶级的商业犯罪天才被挚友陷害致死，醒来却发现自己回到了大学时代，而陷害他的人正笑着请他吃饭。</span>
+    </span>
+</a><a href="./movie-0513.html" class="ranking-page-item group">
+    <span class="ranking-page-number">83</span>
+    <img src="./63.jpg" alt="情来．算尽爱" class="ranking-page-cover">
+    <span class="ranking-page-body">
+        <span class="ranking-page-title group-hover:text-emerald-600 transition-colors">情来．算尽爱</span>
+        <span class="ranking-page-meta">2026 · 中国香港 · 电影 · 爱情 / 悬疑 / 剧情</span>
+        <span class="ranking-page-desc line-clamp-2">数学天才开发出一套“爱情公式”，准确率100%，直到他爱上了一个完全不符合公式的清洁女工。</span>
+    </span>
+</a><a href="./movie-0515.html" class="ranking-page-item group">
+    <span class="ranking-page-number">84</span>
+    <img src="./65.jpg" alt="边城春梦" class="ranking-page-cover">
+    <span class="ranking-page-body">
+        <span class="ranking-page-title group-hover:text-emerald-600 transition-colors">边城春梦</span>
+        <span class="ranking-page-meta">2026 · 中国大陆 · 电影 · 爱情， 文艺</span>
+        <span class="ranking-page-desc line-clamp-2">中缅边境小镇上，一个即将失业的老邮差替一位缅甸姑娘代写情书，却发现自己爱上了她。</span>
+    </span>
+</a><a href="./movie-0522.html" class="ranking-page-item group">
+    <span class="ranking-page-number">85</span>
+    <img src="./72.jpg" alt="小姐好黑" class="ranking-page-cover">
+    <span class="ranking-page-body">
+        <span class="ranking-page-title group-hover:text-emerald-600 transition-colors">小姐好黑</span>
+        <span class="ranking-page-meta">2026 · 中国台湾 · 电影 · 剧情 / 黑色幽默 / 犯罪</span>
+        <span class="ranking-page-desc line-clamp-2">为了争夺一个有钱老头的遗产，养老院里最善良的看护和最黑心的骗子，决定合伙演一出戏。</span>
+    </span>
+</a><a href="./movie-0540.html" class="ranking-page-item group">
+    <span class="ranking-page-number">86</span>
+    <img src="./90.jpg" alt="遥控战争" class="ranking-page-cover">
+    <span class="ranking-page-body">
+        <span class="ranking-page-title group-hover:text-emerald-600 transition-colors">遥控战争</span>
+        <span class="ranking-page-meta">2026 · 美国 · 电影 · 科幻 / 动作</span>
+        <span class="ranking-page-desc line-clamp-2">军方用游戏手柄操控无人机轰炸，少年“高玩”发现炸的是自己父亲。</span>
+    </span>
+</a><a href="./movie-0545.html" class="ranking-page-item group">
+    <span class="ranking-page-number">87</span>
+    <img src="./95.jpg" alt="昨日的记忆" class="ranking-page-cover">
+    <span class="ranking-page-body">
+        <span class="ranking-page-title group-hover:text-emerald-600 transition-colors">昨日的记忆</span>
+        <span class="ranking-page-meta">2026 · 中国台湾 · 电影 · 剧情 / 家庭 / 奇幻</span>
+        <span class="ranking-page-desc line-clamp-2">一位患有阿尔茨海默症的老太太每天都会“穿越”回不同年代，她的孙女通过她碎片化的记忆，拼凑出一个被遗忘的家庭秘密。</span>
+    </span>
+</a><a href="./movie-0555.html" class="ranking-page-item group">
+    <span class="ranking-page-number">88</span>
+    <img src="./105.jpg" alt="超杀硬汉3" class="ranking-page-cover">
+    <span class="ranking-page-body">
+        <span class="ranking-page-title group-hover:text-emerald-600 transition-colors">超杀硬汉3</span>
+        <span class="ranking-page-meta">2026 · 美国 · 电影 · 动作/惊悚</span>
+        <span class="ranking-page-desc line-clamp-2">退休杀手约翰的宠物金鱼被黑帮杀了，他决定让他们全家陪葬。</span>
+    </span>
+</a><a href="./movie-0562.html" class="ranking-page-item group">
+    <span class="ranking-page-number">89</span>
+    <img src="./112.jpg" alt="亚历山大大帝的失落陵墓" class="ranking-page-cover">
+    <span class="ranking-page-body">
+        <span class="ranking-page-title group-hover:text-emerald-600 transition-colors">亚历山大大帝的失落陵墓</span>
+        <span class="ranking-page-meta">2026 · 英国 / 埃及 · 剧集 · 冒险， 历史， 悬疑</span>
+        <span class="ranking-page-desc line-clamp-2">一支国际考古队在亚历山大港地下发现疑似陵墓，却在打开石门的一刻，听到了两千年前的心跳声。</span>
+    </span>
+</a><a href="./movie-0582.html" class="ranking-page-item group">
+    <span class="ranking-page-number">90</span>
+    <img src="./132.jpg" alt="三坊七巷" class="ranking-page-cover">
+    <span class="ranking-page-body">
+        <span class="ranking-page-title group-hover:text-emerald-600 transition-colors">三坊七巷</span>
+        <span class="ranking-page-meta">2026 · 中国大陆 · 电影 · 剧情 / 历史</span>
+        <span class="ranking-page-desc line-clamp-2">一座明清古宅面临拆迁，三户人家的秘密在挖掘机到来前夜同时爆发。</span>
+    </span>
+</a><a href="./movie-0584.html" class="ranking-page-item group">
+    <span class="ranking-page-number">91</span>
+    <img src="./134.jpg" alt="挪亚：灭世启示" class="ranking-page-cover">
+    <span class="ranking-page-body">
+        <span class="ranking-page-title group-hover:text-emerald-600 transition-colors">挪亚：灭世启示</span>
+        <span class="ranking-page-meta">2026 · 美国 · 电影 · 灾难/奇幻</span>
+        <span class="ranking-page-desc line-clamp-2">挪亚建造方舟不仅仅是为了躲避大洪水，更是为了阻止人类最后的繁衍，以此净化世界。</span>
+    </span>
+</a><a href="./movie-0598.html" class="ranking-page-item group">
+    <span class="ranking-page-number">92</span>
+    <img src="./148.jpg" alt="冒牌特工" class="ranking-page-cover">
+    <span class="ranking-page-body">
+        <span class="ranking-page-title group-hover:text-emerald-600 transition-colors">冒牌特工</span>
+        <span class="ranking-page-meta">2026 · 美国 · 电影 · 喜剧 / 动作</span>
+        <span class="ranking-page-desc line-clamp-2">一个口吃的龙套演员被误认为是失踪特工，被迫潜入军火集团完成任务。</span>
+    </span>
+</a><a href="./movie-0605.html" class="ranking-page-item group">
+    <span class="ranking-page-number">93</span>
+    <img src="./5.jpg" alt="致命婚姻：美国逆伦案之谜" class="ranking-page-cover">
+    <span class="ranking-page-body">
+        <span class="ranking-page-title group-hover:text-emerald-600 transition-colors">致命婚姻：美国逆伦案之谜</span>
+        <span class="ranking-page-meta">2026 · 美国 · 剧集 · 犯罪 / 悬疑 / 纪录片式剧情</span>
+        <span class="ranking-page-desc line-clamp-2">纪录片团队重新调查一桩1987年轰动美国的“逆伦案”，却发现当年的真凶可能还在人间。</span>
+    </span>
+</a><a href="./movie-0630.html" class="ranking-page-item group">
+    <span class="ranking-page-number">94</span>
+    <img src="./30.jpg" alt="我不解雇自己" class="ranking-page-cover">
+    <span class="ranking-page-body">
+        <span class="ranking-page-title group-hover:text-emerald-600 transition-colors">我不解雇自己</span>
+        <span class="ranking-page-meta">2026 · 中国大陆 · 电影 · 剧情 / 职场</span>
+        <span class="ranking-page-desc line-clamp-2">人力总监收到自己名字的解雇名单，一场荒诞的自救与反击在公司地下车库悄然展开。</span>
+    </span>
+</a><a href="./movie-0646.html" class="ranking-page-item group">
+    <span class="ranking-page-number">95</span>
+    <img src="./46.jpg" alt="黑魔鲨" class="ranking-page-cover">
+    <span class="ranking-page-body">
+        <span class="ranking-page-title group-hover:text-emerald-600 transition-colors">黑魔鲨</span>
+        <span class="ranking-page-meta">2026 · 美国 · 电影 · 科幻 / 惊悚</span>
+        <span class="ranking-page-desc line-clamp-2">军方基因实验意外创造出一头能吞噬一切电子信号的黑魔鲨，全球潜艇陷入死亡恐慌。</span>
+    </span>
+</a><a href="./movie-0654.html" class="ranking-page-item group">
+    <span class="ranking-page-number">96</span>
+    <img src="./54.jpg" alt="野性哥伦比亚" class="ranking-page-cover">
+    <span class="ranking-page-body">
+        <span class="ranking-page-title group-hover:text-emerald-600 transition-colors">野性哥伦比亚</span>
+        <span class="ranking-page-meta">2026 · 哥伦比亚 · 剧集 · 剧情, 惊悚, 冒险</span>
+        <span class="ranking-page-desc line-clamp-2">一个被城市“驯化”的植物学家，回到哥伦比亚丛林寻找失踪的哥哥，却发现自己体内流淌着足以撼动整个贩毒集团的“野性”基因。</span>
+    </span>
+</a><a href="./movie-0694.html" class="ranking-page-item group">
+    <span class="ranking-page-number">97</span>
+    <img src="./94.jpg" alt="独角兽猎人" class="ranking-page-cover">
+    <span class="ranking-page-body">
+        <span class="ranking-page-title group-hover:text-emerald-600 transition-colors">独角兽猎人</span>
+        <span class="ranking-page-meta">2026 · 美国 · 剧集 · 奇幻, 冒险</span>
+        <span class="ranking-page-desc line-clamp-2">在冷漠的大都市里，一个自闭症女孩声称自己看到了独角兽，没有人相信她。</span>
+    </span>
+</a><a href="./movie-0708.html" class="ranking-page-item group">
+    <span class="ranking-page-number">98</span>
+    <img src="./108.jpg" alt="美人鱼之海盗来袭" class="ranking-page-cover">
+    <span class="ranking-page-body">
+        <span class="ranking-page-title group-hover:text-emerald-600 transition-colors">美人鱼之海盗来袭</span>
+        <span class="ranking-page-meta">2026 · 美国 · 电影 · 奇幻 / 冒险</span>
+        <span class="ranking-page-desc line-clamp-2">加勒比海盗船长意外救了一条美人鱼，她答应带他寻找海底宝藏，但宝藏是活的。</span>
+    </span>
+</a><a href="./movie-0729.html" class="ranking-page-item group">
+    <span class="ranking-page-number">99</span>
+    <img src="./129.jpg" alt="九一一事件簿" class="ranking-page-cover">
+    <span class="ranking-page-body">
+        <span class="ranking-page-title group-hover:text-emerald-600 transition-colors">九一一事件簿</span>
+        <span class="ranking-page-meta">2026 · 美国 · 电视剧 · 剧情, 历史, 惊悚</span>
+        <span class="ranking-page-desc line-clamp-2">从双子塔内的厨师、空中交通管制员到小布什总统，9个普通人的90分钟，重塑那个改变世界的上午。</span>
+    </span>
+</a><a href="./movie-0733.html" class="ranking-page-item group">
+    <span class="ranking-page-number">100</span>
+    <img src="./133.jpg" alt="东欧犹太乐项目" class="ranking-page-cover">
+    <span class="ranking-page-body">
+        <span class="ranking-page-title group-hover:text-emerald-600 transition-colors">东欧犹太乐项目</span>
+        <span class="ranking-page-meta">2026 · 以色列 / 波兰 · 电影 · 纪录片 / 音乐 / 历史</span>
+        <span class="ranking-page-desc line-clamp-2">一名以色列青年音乐制作人，带着一台录音机走遍波兰、乌克兰和白俄罗斯，寻找二战前克莱兹默音乐的最后一个音符传承人。</span>
+    </span>
+</a><a href="./movie-0735.html" class="ranking-page-item group">
+    <span class="ranking-page-number">101</span>
+    <img src="./135.jpg" alt="部门报告" class="ranking-page-cover">
+    <span class="ranking-page-body">
+        <span class="ranking-page-title group-hover:text-emerald-600 transition-colors">部门报告</span>
+        <span class="ranking-page-meta">2026 · 中国大陆 · 电影 · 职场、黑色幽默</span>
+        <span class="ranking-page-desc line-clamp-2">一份失踪的季度报告让整个部门陷入自证清白的地狱轮盘，最终无人记得报告写了什么。</span>
+    </span>
+</a><a href="./movie-0742.html" class="ranking-page-item group">
+    <span class="ranking-page-number">102</span>
+    <img src="./142.jpg" alt="一起同过窗第三季" class="ranking-page-cover">
+    <span class="ranking-page-body">
+        <span class="ranking-page-title group-hover:text-emerald-600 transition-colors">一起同过窗第三季</span>
+        <span class="ranking-page-meta">2026 · 中国大陆 · 剧集 · 剧情, 喜剧</span>
+        <span class="ranking-page-desc line-clamp-2">大学时光过半，曾经的伙伴们面临实习、考研与出国的岔路口，他们的友情与爱情将迎来最终的考验。</span>
+    </span>
+</a><a href="./movie-0753.html" class="ranking-page-item group">
+    <span class="ranking-page-number">103</span>
+    <img src="./3.jpg" alt="重拳" class="ranking-page-cover">
+    <span class="ranking-page-body">
+        <span class="ranking-page-title group-hover:text-emerald-600 transition-colors">重拳</span>
+        <span class="ranking-page-meta">2026 · 美国 · 电影 · 体育传记</span>
+        <span class="ranking-page-desc line-clamp-2">单亲妈妈清洁工靠捡来的沙袋练出一双铁拳，35岁站上世界金腰带擂台。</span>
+    </span>
+</a><a href="./movie-0754.html" class="ranking-page-item group">
+    <span class="ranking-page-number">104</span>
+    <img src="./4.jpg" alt="艳舞惊魂" class="ranking-page-cover">
+    <span class="ranking-page-body">
+        <span class="ranking-page-title group-hover:text-emerald-600 transition-colors">艳舞惊魂</span>
+        <span class="ranking-page-meta">2026 · 美国 · 电影 · 惊悚, 悬疑</span>
+        <span class="ranking-page-desc line-clamp-2">一家地下脱衣舞俱乐部的舞女接连失踪，为了自保，一名新来的舞者决定用钢管当武器，在霓虹灯下揪出那个披着看客皮的变态杀手。</span>
+    </span>
+</a><a href="./movie-0771.html" class="ranking-page-item group">
+    <span class="ranking-page-number">105</span>
+    <img src="./21.jpg" alt="铳梦" class="ranking-page-cover">
+    <span class="ranking-page-body">
+        <span class="ranking-page-title group-hover:text-emerald-600 transition-colors">铳梦</span>
+        <span class="ranking-page-meta">2026 · 美国/日本 · 电影 · 动作，科幻，赛博朋克</span>
+        <span class="ranking-page-desc line-clamp-2">废铁场医生捡回少女头颅，她拥有失传的火星古武术，和一双仰望天空的机械眼。</span>
+    </span>
+</a><a href="./movie-0777.html" class="ranking-page-item group">
+    <span class="ranking-page-number">106</span>
+    <img src="./27.jpg" alt="塑料" class="ranking-page-cover">
+    <span class="ranking-page-body">
+        <span class="ranking-page-title group-hover:text-emerald-600 transition-colors">塑料</span>
+        <span class="ranking-page-meta">2026 · 法国 · 电影 · 科幻/剧情/惊悚</span>
+        <span class="ranking-page-desc line-clamp-2">一种能将人体内塑料垃圾转化为能量的寄生虫出现，感染者获得了超能力，却也在慢慢变成塑料本身。</span>
+    </span>
+</a><a href="./movie-0787.html" class="ranking-page-item group">
+    <span class="ranking-page-number">107</span>
+    <img src="./37.jpg" alt="除魔特攻队" class="ranking-page-cover">
+    <span class="ranking-page-body">
+        <span class="ranking-page-title group-hover:text-emerald-600 transition-colors">除魔特攻队</span>
+        <span class="ranking-page-meta">2026 · 韩国 · 电影 · 动作</span>
+        <span class="ranking-page-desc line-clamp-2">一支由前科犯组成的“廉价除魔队”在直播驱魔时，不慎放出被封印了三百年的恶魔本尊。</span>
+    </span>
+</a><a href="./movie-0788.html" class="ranking-page-item group">
+    <span class="ranking-page-number">108</span>
+    <img src="./38.jpg" alt="丝克伍事件" class="ranking-page-cover">
+    <span class="ranking-page-body">
+        <span class="ranking-page-title group-hover:text-emerald-600 transition-colors">丝克伍事件</span>
+        <span class="ranking-page-meta">2026 · 美国 · 电影 · 惊悚</span>
+        <span class="ranking-page-desc line-clamp-2">她是核工厂的普通女工，却凭借一己之力揭发了美国史上最大的放射性污染物覆盖案。</span>
+    </span>
+</a><a href="./movie-0792.html" class="ranking-page-item group">
+    <span class="ranking-page-number">109</span>
+    <img src="./42.jpg" alt="火星救母记" class="ranking-page-cover">
+    <span class="ranking-page-body">
+        <span class="ranking-page-title group-hover:text-emerald-600 transition-colors">火星救母记</span>
+        <span class="ranking-page-meta">2026 · 美国 · 电影 · 动画 / 科幻 / 冒险</span>
+        <span class="ranking-page-desc line-clamp-2">男孩为救被外星人抓走的妈妈，闯入火星地下的“母体回收站”。</span>
+    </span>
+</a><a href="./movie-0793.html" class="ranking-page-item group">
+    <span class="ranking-page-number">110</span>
+    <img src="./43.jpg" alt="茶马古道·德拉姆" class="ranking-page-cover">
+    <span class="ranking-page-body">
+        <span class="ranking-page-title group-hover:text-emerald-600 transition-colors">茶马古道·德拉姆</span>
+        <span class="ranking-page-meta">2026 · 中国大陆 · 剧集 · 剧情, 冒险, 历史</span>
+        <span class="ranking-page-desc line-clamp-2">一只通体雪白的骡子“德拉姆”突然开口说话，要求马帮将它运到卡瓦格博峰，报酬是复活二十年前坠崖的赶马人。</span>
+    </span>
+</a><a href="./movie-0806.html" class="ranking-page-item group">
+    <span class="ranking-page-number">111</span>
+    <img src="./56.jpg" alt="太阳市集" class="ranking-page-cover">
+    <span class="ranking-page-body">
+        <span class="ranking-page-title group-hover:text-emerald-600 transition-colors">太阳市集</span>
+        <span class="ranking-page-meta">2026 · 中国大陆 · 剧集 · 奇幻, 剧情</span>
+        <span class="ranking-page-desc line-clamp-2">在城市地下八层，有一个只正午开门、贩卖任何你想得到的东西的市集。</span>
+    </span>
+</a><a href="./movie-0840.html" class="ranking-page-item group">
+    <span class="ranking-page-number">112</span>
+    <img src="./90.jpg" alt="文字与图像" class="ranking-page-cover">
+    <span class="ranking-page-body">
+        <span class="ranking-page-title group-hover:text-emerald-600 transition-colors">文字与图像</span>
+        <span class="ranking-page-meta">2026 · 中国大陆 · 电影 · 爱情 / 文艺</span>
+        <span class="ranking-page-desc line-clamp-2">失语的前畅销作家与盲人画家共用一间工作室，她用文字为他读世界，他用图像为她画心声。</span>
+    </span>
+</a><a href="./movie-0846.html" class="ranking-page-item group">
+    <span class="ranking-page-number">113</span>
+    <img src="./96.jpg" alt="星尘天使" class="ranking-page-cover">
+    <span class="ranking-page-body">
+        <span class="ranking-page-title group-hover:text-emerald-600 transition-colors">星尘天使</span>
+        <span class="ranking-page-meta">2026 · 英国 · 电影 · 科幻 / 剧情</span>
+        <span class="ranking-page-desc line-clamp-2">核战后的废土上，最后一个人类女孩遇到了一台被设定为“必须守护你”的军用机器人，它的核心程序却是母爱。</span>
+    </span>
+</a><a href="./movie-0859.html" class="ranking-page-item group">
+    <span class="ranking-page-number">114</span>
+    <img src="./109.jpg" alt="自杀热线" class="ranking-page-cover">
+    <span class="ranking-page-body">
+        <span class="ranking-page-title group-hover:text-emerald-600 transition-colors">自杀热线</span>
+        <span class="ranking-page-meta">2026 · 日本 · 剧集 · 剧情 / 心理</span>
+        <span class="ranking-page-desc line-clamp-2">深夜自杀热线的接线员，在每次60秒的通话中，试图把电话那头的陌生人拉回人间。</span>
+    </span>
+</a><a href="./movie-0868.html" class="ranking-page-item group">
+    <span class="ranking-page-number">115</span>
+    <img src="./118.jpg" alt="玩家战争" class="ranking-page-cover">
+    <span class="ranking-page-body">
+        <span class="ranking-page-title group-hover:text-emerald-600 transition-colors">玩家战争</span>
+        <span class="ranking-page-meta">2026 · 美国 · 电影 · 动作/科幻/冒险</span>
+        <span class="ranking-page-desc line-clamp-2">当游戏公司决定删除“平民服务器”，全球最后一批零充玩家决定炸掉那颗管理数据的卫星。</span>
+    </span>
+</a><a href="./movie-0904.html" class="ranking-page-item group">
+    <span class="ranking-page-number">116</span>
+    <img src="./4.jpg" alt="绝地战警2" class="ranking-page-cover">
+    <span class="ranking-page-body">
+        <span class="ranking-page-title group-hover:text-emerald-600 transition-colors">绝地战警2</span>
+        <span class="ranking-page-meta">2026 · 美国 · 电影 · 动作 / 喜剧</span>
+        <span class="ranking-page-desc line-clamp-2">老警探搭档追查新型毒品，发现幕后黑手是他们的老上司，两人不得不“叛变”执法。</span>
+    </span>
+</a><a href="./movie-0923.html" class="ranking-page-item group">
+    <span class="ranking-page-number">117</span>
+    <img src="./23.jpg" alt="天魔3" class="ranking-page-cover">
+    <span class="ranking-page-body">
+        <span class="ranking-page-title group-hover:text-emerald-600 transition-colors">天魔3</span>
+        <span class="ranking-page-meta">2026 · 美国 · 电影 · 恐怖/惊悚/宗教</span>
+        <span class="ranking-page-desc line-clamp-2">前两部的主角全部死亡，新主角必须阻止已经长大的恶魔之子竞选美国总统。</span>
+    </span>
+</a><a href="./movie-0932.html" class="ranking-page-item group">
+    <span class="ranking-page-number">118</span>
+    <img src="./32.jpg" alt="1987大悬案" class="ranking-page-cover">
+    <span class="ranking-page-body">
+        <span class="ranking-page-title group-hover:text-emerald-600 transition-colors">1987大悬案</span>
+        <span class="ranking-page-meta">2026 · 韩国 · 剧集 · 悬疑，犯罪，年代</span>
+        <span class="ranking-page-desc line-clamp-2">1987年首尔一名女大学生失踪，三十年后同地点又发现白骨，而两起案件的关联人竟是总统候选人。</span>
+    </span>
+</a><a href="./movie-0967.html" class="ranking-page-item group">
+    <span class="ranking-page-number">119</span>
+    <img src="./67.jpg" alt="拿破仑传1" class="ranking-page-cover">
+    <span class="ranking-page-body">
+        <span class="ranking-page-title group-hover:text-emerald-600 transition-colors">拿破仑传1</span>
+        <span class="ranking-page-meta">2026 · 法国 · 剧集 · 历史/传记</span>
+        <span class="ranking-page-desc line-clamp-2">聚焦24岁之前默默无闻的拿破仑，从科西嘉破落贵族到土伦战役的逆袭。</span>
+    </span>
+</a><a href="./movie-0980.html" class="ranking-page-item group">
+    <span class="ranking-page-number">120</span>
+    <img src="./80.jpg" alt="谈话头" class="ranking-page-cover">
+    <span class="ranking-page-body">
+        <span class="ranking-page-title group-hover:text-emerald-600 transition-colors">谈话头</span>
+        <span class="ranking-page-meta">2026 · 中国香港 · 电影 · 犯罪 / 黑帮 / 心理</span>
+        <span class="ranking-page-desc line-clamp-2">警方派出的卧底全部失联，最后一位幸存者精神崩溃，而他的心理医生才是真正的幕后黑手。</span>
+    </span>
+</a>
+        </div>
+    </section>
+</main>
+<footer class="bg-slate-900 text-white py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div class="col-span-1 md:col-span-2">
+                <div class="flex items-center space-x-2 mb-4">
+                    <span class="site-logo-mark bg-gradient-to-br from-emerald-600 to-teal-600 p-2 rounded-lg">
+                        <svg class="w-6 h-6 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <rect width="18" height="18" x="3" y="3" rx="2"></rect>
+                            <path d="M7 3v18"></path>
+                            <path d="M3 7.5h4"></path>
+                            <path d="M3 12h18"></path>
+                            <path d="M3 16.5h4"></path>
+                            <path d="M17 3v18"></path>
+                            <path d="M17 7.5h4"></path>
+                            <path d="M17 16.5h4"></path>
+                        </svg>
+                    </span>
+                    <span class="text-xl font-bold">好看日韩剧</span>
+                </div>
+                <p class="text-slate-400 max-w-md leading-relaxed">好看日韩剧提供日韩电视剧、日韩电影、国产电视剧、国产电影在线免费观看，最新高清影视资源持续更新，包含悬疑、爱情、动作、喜剧、剧情等多种类型，为您带来优质的在线观影体验。</p>
+            </div>
+            <div>
+                <h3 class="font-semibold text-lg mb-4">影片分类</h3>
+                <ul class="space-y-2 text-slate-400">
+                    <li><a href="./category-japanese-korean.html" class="hover:text-emerald-400 transition-colors">日韩热播</a></li><li><a href="./category-domestic.html" class="hover:text-emerald-400 transition-colors">国产精选</a></li><li><a href="./category-movie.html" class="hover:text-emerald-400 transition-colors">高清电影</a></li><li><a href="./category-series.html" class="hover:text-emerald-400 transition-colors">热播剧集</a></li><li><a href="./category-suspense-action.html" class="hover:text-emerald-400 transition-colors">悬疑动作</a></li><li><a href="./category-romance-comedy.html" class="hover:text-emerald-400 transition-colors">爱情喜剧</a></li><li><a href="./category-fantasy-adventure.html" class="hover:text-emerald-400 transition-colors">奇幻冒险</a></li><li><a href="./category-global.html" class="hover:text-emerald-400 transition-colors">综合片库</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="font-semibold text-lg mb-4">站内导航</h3>
+                <ul class="space-y-2 text-slate-400">
+                    <li><a href="./index.html" class="hover:text-emerald-400 transition-colors">首页</a></li>
+                    <li><a href="./categories.html" class="hover:text-emerald-400 transition-colors">分类总览</a></li>
+                    <li><a href="./ranking.html" class="hover:text-emerald-400 transition-colors">排行榜</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="border-t border-slate-800 mt-8 pt-6 text-center text-slate-500">
+            <p>© 2026 好看日韩剧. 高清影视资源持续更新。</p>
+        </div>
+    </div>
+</footer>
+    <script src="./assets/movies.js"></script>
+    <script src="./assets/site.js"></script>
+    <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?95df08bc498ee0333203841fd6fee1eb";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>

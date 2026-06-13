@@ -1,0 +1,334 @@
+body {
+    background: #f8fafc;
+    color: #0f172a;
+}
+
+.site-logo-mark {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-carousel {
+    background: #020617;
+}
+
+.hero-slide {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 700ms ease;
+}
+
+.hero-slide.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.hero-dot {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.hero-dot.active {
+    width: 2rem;
+    background: #ffffff;
+}
+
+.hero-search-card {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(260px, 420px);
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.hero-search-box input,
+.global-search-input {
+    width: 100%;
+    background: #f1f5f9;
+    border: 1px solid #e2e8f0;
+    border-radius: 9999px;
+    padding: 0.85rem 1.25rem;
+    outline: none;
+}
+
+.hero-search-box input:focus,
+.global-search-input:focus {
+    border-color: #10b981;
+    box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.18);
+}
+
+.category-pill {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 9999px;
+    background: #ecfdf5;
+    color: #047857;
+    padding: 0.55rem 1rem;
+    font-weight: 600;
+    transition: all 180ms ease;
+}
+
+.category-pill:hover {
+    background: #059669;
+    color: #ffffff;
+    transform: translateY(-1px);
+}
+
+.search-result-card {
+    display: flex;
+    gap: 0.75rem;
+    align-items: center;
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 1rem;
+    padding: 0.75rem;
+    transition: all 180ms ease;
+}
+
+.search-result-card:hover {
+    background: #ffffff;
+    box-shadow: 0 12px 24px rgba(15, 23, 42, 0.08);
+}
+
+.search-result-cover {
+    width: 4.5rem;
+    height: 3rem;
+    object-fit: cover;
+    border-radius: 0.75rem;
+    flex-shrink: 0;
+}
+
+.search-result-body {
+    min-width: 0;
+}
+
+.search-result-title {
+    display: block;
+    font-weight: 700;
+    color: #0f172a;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.search-result-meta {
+    display: block;
+    margin-top: 0.15rem;
+    color: #64748b;
+    font-size: 0.8rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.movie-card.is-hidden {
+    display: none;
+}
+
+.category-overview-card {
+    display: block;
+    overflow: hidden;
+    background: #ffffff;
+    border-radius: 1rem;
+    box-shadow: 0 10px 24px rgba(15, 23, 42, 0.08);
+    transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.category-overview-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 20px 40px rgba(15, 23, 42, 0.12);
+}
+
+.category-preview-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: repeat(2, 7rem);
+    gap: 0.25rem;
+    background: #0f172a;
+}
+
+.category-preview-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.category-preview-image:first-child {
+    grid-row: span 2;
+}
+
+.ranking-item {
+    min-height: 6rem;
+}
+
+.rank-number {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.8rem;
+    height: 2.8rem;
+    border-radius: 9999px;
+    background: linear-gradient(135deg, #059669, #0d9488);
+    color: #ffffff;
+    font-weight: 800;
+    flex-shrink: 0;
+}
+
+.ranking-page-list {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 1rem;
+}
+
+.ranking-page-item {
+    display: grid;
+    grid-template-columns: 4rem 8rem minmax(0, 1fr);
+    gap: 1rem;
+    align-items: center;
+    background: #ffffff;
+    border-radius: 1rem;
+    padding: 1rem;
+    box-shadow: 0 10px 24px rgba(15, 23, 42, 0.08);
+    transition: box-shadow 180ms ease, transform 180ms ease;
+}
+
+.ranking-page-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 18px 36px rgba(15, 23, 42, 0.12);
+}
+
+.ranking-page-number {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 3.25rem;
+    height: 3.25rem;
+    border-radius: 9999px;
+    background: #ecfdf5;
+    color: #047857;
+    font-weight: 800;
+}
+
+.ranking-page-cover {
+    width: 8rem;
+    height: 5rem;
+    object-fit: cover;
+    border-radius: 0.75rem;
+}
+
+.ranking-page-body {
+    min-width: 0;
+}
+
+.ranking-page-title {
+    display: block;
+    color: #0f172a;
+    font-size: 1.1rem;
+    font-weight: 800;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.ranking-page-meta,
+.ranking-page-desc {
+    display: block;
+    color: #64748b;
+    margin-top: 0.25rem;
+    font-size: 0.9rem;
+}
+
+.player-frame {
+    overflow: hidden;
+}
+
+.player-cover {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: opacity 220ms ease, visibility 220ms ease;
+    z-index: 2;
+}
+
+.player-cover.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.player-cover-image,
+.player-cover-shade {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.player-cover-image {
+    object-fit: cover;
+}
+
+.player-cover-shade {
+    background: linear-gradient(180deg, rgba(2, 6, 23, 0.35), rgba(2, 6, 23, 0.82));
+}
+
+.player-cover-button {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 5.5rem;
+    height: 5.5rem;
+    border-radius: 9999px;
+    background: linear-gradient(135deg, #059669, #0d9488);
+    box-shadow: 0 20px 45px rgba(4, 120, 87, 0.38);
+    transition: transform 180ms ease;
+}
+
+.player-cover:hover .player-cover-button {
+    transform: scale(1.08);
+}
+
+.movie-player {
+    background: #000000;
+}
+
+@media (max-width: 768px) {
+    .hero-search-card {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-controls {
+        right: 1rem;
+        bottom: 1rem;
+    }
+
+    .hero-dots {
+        bottom: 1.35rem;
+    }
+
+    .ranking-page-item {
+        grid-template-columns: 3rem 6rem minmax(0, 1fr);
+        padding: 0.75rem;
+    }
+
+    .ranking-page-number {
+        width: 2.4rem;
+        height: 2.4rem;
+        font-size: 0.85rem;
+    }
+
+    .ranking-page-cover {
+        width: 6rem;
+        height: 4rem;
+    }
+
+    .ranking-page-title {
+        font-size: 1rem;
+    }
+}
